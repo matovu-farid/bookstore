@@ -2,7 +2,7 @@
 
 # bookstore
 
-This a website that provides a math calculator to perform mathematical operations.
+This a bookstore website
 
 ![screenshot](./screenshot.PNG)
 
