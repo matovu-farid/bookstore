@@ -1,7 +1,9 @@
+import { useState } from 'react';
+import { books } from '../../redux/books/books';
 import BookItem from '../BookItem/BookItem';
 
 const BookList = () => {
-  const data = [];
+  const data = useState(books);
   return (
     <ul>
       {data.map(({
@@ -9,6 +11,7 @@ const BookList = () => {
       }) => (
         <li key={id}>
           <BookItem
+            id={id}
             author={author}
             name={name}
             category={category}
