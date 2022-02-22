@@ -1,31 +1,19 @@
+import { useSelector } from 'react-redux';
+
 import BookItem from '../BookItem/BookItem';
 
 const BookList = () => {
-  const fakeData = [
-    {
-      id: '1',
-      name: 'Hunger games',
-      author: 'Jake',
-      category: 'Science Fiction',
-    },
-    {
-      id: '2',
-      name: 'Hunger games',
-      author: 'Jake',
-      category: 'Science Fiction',
-    },
-
-  ];
+  const books = useSelector((state) => state.booksReducer);
   return (
     <ul>
-      {fakeData.map(({
-        author, name, category, id,
+      {books.map(({
+        author, title, id,
       }) => (
         <li key={id}>
           <BookItem
+            id={id}
             author={author}
-            name={name}
-            category={category}
+            title={title}
           />
         </li>
       ))}
