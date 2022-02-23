@@ -8,6 +8,7 @@ const Books = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+
   const books = useSelector((state) => state.booksReducer);
 
   const submitBookToStore = () => {
@@ -16,6 +17,7 @@ const Books = () => {
       id,
       title,
       author,
+
     };
 
     // dispatch an action and pass it the newBook object (your action's payload)
@@ -31,9 +33,9 @@ const Books = () => {
 
         <select aria-label="categories" defaultValue="">
           <option value="" disabled hidden>Category</option>
-          <option>Category 1</option>
-          <option>Category 2</option>
-          <option>Category 3</option>
+          <option value="sci-fi">Category 1</option>
+          <option value="romance">Category 2</option>
+          <option value="action">Category 3</option>
         </select>
         <button onClick={submitBookToStore} type="button">Add book</button>
       </form>
