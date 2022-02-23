@@ -18,7 +18,10 @@ export const addBook = (payload) => async (dispatch) => {
       payload,
     });
   } else {
-    console.log(response.statusText);
+    dispatch({
+      type: REPORT_ERROR,
+      payload: response.statusText,
+    });
   }
 };
 
@@ -71,7 +74,7 @@ const booksReducer = (state = [], action) => {
     case ADD_BOOK: return [...state, action.payload];
     case REMOVE_BOOK: return state.filter((book) => book.id !== action.payload);
     case FETCH_BOOKS: return action.payload;
-    case REPORT_ERROR: return state;
+    case REPORT_ERROR: return [action.payload];
     default: return state;
   }
 };
