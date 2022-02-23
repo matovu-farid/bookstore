@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import BookList from '../components/BookList/BookList';
 import { addBook } from '../redux/books/books';
 import './Books.css';
@@ -9,10 +10,8 @@ const Books = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
-  const books = useSelector((state) => state.booksReducer);
-
   const submitBookToStore = () => {
-    const id = books.length;
+    const id = uuidv4();
     const newBook = {
       id,
       title,
@@ -20,7 +19,6 @@ const Books = () => {
 
     };
 
-    // dispatch an action and pass it the newBook object (your action's payload)
     dispatch(addBook(newBook));
   };
 

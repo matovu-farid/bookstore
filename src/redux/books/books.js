@@ -5,6 +5,7 @@ const REPORT_ERROR = 'bookStore/books/REPORT_ERROR';
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/AcpJIcAvwt8ZMO0VHf3D/books';
 export const addBook = (payload) => async (dispatch) => {
   const { id, title, author: category } = payload;
+  if (title === '' || category === '') return;
   const response = await fetch(baseUrl, {
     method: 'POST',
     body: JSON.stringify({ item_id: id, title, category }),
@@ -20,7 +21,7 @@ export const addBook = (payload) => async (dispatch) => {
   } else {
     dispatch({
       type: REPORT_ERROR,
-      payload: response.statusText,
+      payload: await response.text(),
     });
   }
 };
@@ -42,7 +43,7 @@ export const removeBook = (payload) => async (dispatch) => {
   } else {
     dispatch({
       type: REPORT_ERROR,
-      payload: response.statusText,
+      payload: await response.text(),
     });
   }
 };
@@ -51,9 +52,8 @@ export const fetchBooks = () => async (dispatch) => {
   if (response.ok) {
     const items = await response.json();
     const payload = [];
-    Object.keys(items).forEach((key) => {
-      const { category: author, title } = items[key][0];
-      const id = parseInt(key, 10);
+    Object.keys(items).forEach((id) => {
+      const { category: author, title } = items[id][0];
       payload.push({ id, title, author });
     });
 
@@ -64,7 +64,7 @@ export const fetchBooks = () => async (dispatch) => {
   } else {
     dispatch({
       type: REPORT_ERROR,
-      payload: response.statusText,
+      payload: await response.text(),
     });
   }
 };
@@ -74,7 +74,7 @@ const booksReducer = (state = [], action) => {
     case ADD_BOOK: return [...state, action.payload];
     case REMOVE_BOOK: return state.filter((book) => book.id !== action.payload);
     case FETCH_BOOKS: return action.payload;
-    case REPORT_ERROR: return [action.payload];
+    case REPORT_ERROR: return [{ title: action.payload, author: '', id: '' }];
     default: return state;
   }
 };
