@@ -1,3 +1,20 @@
 .navbar {
   display: flex;
 }
+
+.nav-card {
+  display: flex;
+  box-shadow: 0 0 5px #e8e8e8;
+}
+
+.nav-card > h3 {
+  color: #0290ff;
+}
+
+.active-nav {
+  color: #d0d0d0;
+}
+
+.non-active-nav {
+  color: #e8e8e8;
+}
