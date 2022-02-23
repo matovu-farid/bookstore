@@ -22,13 +22,14 @@ export const addBook = (payload) => async (dispatch) => {
 };
 
 export const removeBook = (payload) => async (dispatch) => {
-  const url = `${baseUrl}/${payload.id}`;
+  const url = `${baseUrl}/${payload}`;
   const response = await fetch(url, {
     method: 'DELETE',
     headers: {
       'content-type': 'application/json',
     },
   });
+
   if (response.ok) {
     dispatch({
       type: REMOVE_BOOK,
