@@ -1,0 +1,39 @@
+.blue-text {
+  color: #4386bf;
+}
+
+.item {
+  padding: 0;
+}
+
+.item-button { 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove {
+  display: flex;
+}
+
+.vertical-separator {
+  height: 1.5rem;
+  width: 2px;
+  background-color: #c5bfbf;
+  margin: 0 10px;
+}
+
+.options-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.title {
+  color: #383838;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}

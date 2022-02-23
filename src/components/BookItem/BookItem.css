@@ -2,3 +2,14 @@
   width: 70px;
   height: 70px;
 }
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px #968f8f;
+  padding: 20px;
+  align-items: center;
+}
+
+
+
