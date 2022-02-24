@@ -8,10 +8,10 @@ const Navbar = () => (
       <h3>Bookstore CMS</h3>
       <ul className="navbar">
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'non-active-nav')} to="/">Books</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'non-active-nav')} to="/">BOOKS</NavLink>
         </li>
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'non-active-nav')} to="/categories">Categories</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'non-active-nav')} to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
     </div>

@@ -28,13 +28,16 @@ const Form = () => {
   ];
 
   return (
-    <form className="book-form">
-      <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="Book title ..." />
-      <input onChange={(e) => setAuthor(e.target.value)} type="text" placeholder="Author ..." />
-      <Select placeholder="categories ..." options={options} />
+    <div className="form">
+      <h3>ADD NEW BOOK</h3>
+      <form className="book-form">
+        <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="Book title ..." />
+        <input onChange={(e) => setAuthor(e.target.value)} type="text" placeholder="Author ..." />
+        <Select className="select" placeholder="categories ..." options={options} />
 
-      <button className="bg-blue add-button" onClick={submitBookToStore} type="button">Add book</button>
-    </form>
+        <button className="bg-blue add-button" onClick={submitBookToStore} type="button">Add book</button>
+      </form>
+    </div>
   );
 };
 

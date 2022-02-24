@@ -23,11 +23,13 @@
 }
 
 .active-nav {
-  color: #d0d0d0;
+  color: #121212;
+  text-decoration: none;
 }
 
 .non-active-nav {
   color: #e8e8e8;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1200px){
