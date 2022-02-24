@@ -1,6 +1,6 @@
 .item-middle {
   display: flex;
-  
+  align-items: center;
 
  
 }
@@ -8,4 +8,13 @@
 .progress-bar {
   width: 70px;
   height: 70px;
+}
+
+.pecent-text {
+  color: black;
+  font-size: 2rem;
+}
+
+.completed {
+  font-size: 0.875rem;
 }
