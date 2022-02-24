@@ -6,7 +6,8 @@ This a bookstore website
 
 ![screenshot](./screenshot.PNG)
 
-This project is a bookstore app.
+## Description
+Bookstore is an app that allows you to display a list of added books, add new book and remove a book. It is built using React and Redux
 
 ## Built With
 
