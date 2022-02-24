@@ -10,9 +10,11 @@ const ItemStart = ({ title, author, id }) => {
   };
   return (
     <div className="item-start">
-      <p className="title">{title}</p>
+      <div className="item-main">
 
-      <p className="blue-text">{author}</p>
+        <p className="title">{title}</p>
+        <p className="blue-text">{author}</p>
+      </div>
       <ul className="options-list">
         <li className="item">
           <button className="item-button blue-text" type="button">Comments</button>
