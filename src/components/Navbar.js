@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { ImMan } from 'react-icons/im';
 import './Navbar.css';
 
 const Navbar = () => (
@@ -13,7 +14,12 @@ const Navbar = () => (
         <li>
           <NavLink className={({ isActive }) => (isActive ? 'active-nav' : 'non-active-nav')} to="/categories">CATEGORIES</NavLink>
         </li>
+
       </ul>
+      <div className="icon-div">
+
+        <ImMan className="icon" />
+      </div>
     </div>
   </div>
 );

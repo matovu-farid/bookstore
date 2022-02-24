@@ -8,12 +8,31 @@
   box-shadow: 0 0 5px #e8e8e8;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-content {
   display: flex;
+  position: relative;
  
   align-items: center;
+}
+.icon-div {
+  position: absolute;
+  right: 0;
+  color: #0290ff;
+  border: #e2e2e2 solid 1px;
+  border-radius: 50% 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
 }
 
 .nav-content > h3 {
@@ -36,5 +55,7 @@
   .nav-content {
     width: 85vw;
   }
+
+  
   
 }
