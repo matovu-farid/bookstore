@@ -1,11 +1,12 @@
 import { useSelector } from 'react-redux';
 
 import BookItem from '../BookItem/BookItem';
+import './BookList.css';
 
 const BookList = () => {
   const books = useSelector((state) => state.booksReducer);
   return (
-    <ul>
+    <ul className="book-list">
       {books.map(({
         author, title, id,
       }) => (

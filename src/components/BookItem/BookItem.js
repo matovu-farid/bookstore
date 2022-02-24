@@ -1,23 +1,20 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+import 'react-circular-progressbar/dist/styles.css';
+import './BookItem.css';
+import ItemEnd from './ItemEnd/ItemEnd';
+import ItemMiddle from './ItemMiddle/ItemMiddle';
+import ItemStart from './ItemStart/ItemStart';
 
 const BookItem = ({
   title, author, id,
-}) => {
-  const dispatch = useDispatch();
-  const onClick = () => {
-    dispatch(removeBook(id));
-  };
-  return (
-    <div>
-      <p>{title}</p>
+}) => (
+  <div className="item-card">
 
-      <p>{author}</p>
-      <button type="button" onClick={onClick}>Remove</button>
-    </div>
-  );
-};
+    <ItemStart title={title} author={author} id={id} />
+    <ItemMiddle />
+    <ItemEnd />
+  </div>
+);
 BookItem.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,

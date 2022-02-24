@@ -1,8 +1,21 @@
 html {
   box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
 }
 
 li {
   list-style-type: none;
   padding: 10px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.bg-blue {
+  background-color: #0290ff;
 }

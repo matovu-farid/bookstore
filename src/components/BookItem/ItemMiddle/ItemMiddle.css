@@ -1,0 +1,19 @@
+.item-middle {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-right: 15px;
+}
+
+.pecent-text {
+  color: black;
+  font-size: 2rem;
+}
+
+.completed {
+  font-size: 0.875rem;
+}
