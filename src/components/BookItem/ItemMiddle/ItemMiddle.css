@@ -1,6 +1,11 @@
 .item-middle {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
+
  
+}
+
+.progress-bar {
+  width: 70px;
+  height: 70px;
 }

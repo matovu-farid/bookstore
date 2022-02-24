@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import 'react-circular-progressbar/dist/styles.css';
 import './BookItem.css';
+import ItemEnd from './ItemEnd/ItemEnd';
 import ItemMiddle from './ItemMiddle/ItemMiddle';
 import ItemStart from './ItemStart/ItemStart';
 
@@ -11,11 +12,7 @@ const BookItem = ({
 
     <ItemStart title={title} author={author} id={id} />
     <ItemMiddle />
-    <div className="item-end">
-      <p>CURRENT CHAPTER</p>
-      <p>CHAPTER 17</p>
-      <button type="button">UPDATE PROGRESS</button>
-    </div>
+    <ItemEnd />
   </div>
 );
 BookItem.propTypes = {

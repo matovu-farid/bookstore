@@ -1,0 +1,29 @@
+.book-form {
+  padding: 0 10px;
+  display: flex;
+}
+.book-form > input {
+  flex: 2;
+}
+
+.book-form > input::placeholder {
+  color: #c4c4c4;
+}
+
+.book-form > button {
+  flex: 1;
+} 
+
+.book-form > select {
+  flex: 1;
+}
+
+.add-button {
+  color: #fff;
+  padding: 10px 5px;
+  border: none
+}
+
+option[hidden] {
+  background-color: red;
+}

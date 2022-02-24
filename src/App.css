@@ -6,3 +6,11 @@ li {
   list-style-type: none;
   padding: 10px;
 }
+
+ul {
+  padding-left: 0;
+}
+
+.bg-blue {
+  background-color: #0290ff;
+}
