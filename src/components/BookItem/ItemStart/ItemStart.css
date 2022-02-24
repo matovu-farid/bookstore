@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-.item-button { 
+.item-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -51,5 +51,4 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  
 }

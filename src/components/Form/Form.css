@@ -2,6 +2,7 @@
   padding: 0 0;
   display: flex;
 }
+
 .book-form > input {
   flex: 2;
   outline: none;
@@ -14,7 +15,7 @@
 
 .book-form > button {
   flex: 1;
-} 
+}
 
 .book-form > .select {
   flex: 1.5;
@@ -24,18 +25,16 @@
 .add-button {
   color: #fff;
   padding: 10px 5px;
-  border: none
+  border: none;
 }
+
 .form > h3 {
-  color: #888888;
+  color: #888;
   align-self: flex-start;
 }
 
-
-
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   .form {
     width: 85vw;
   }
-  
 }

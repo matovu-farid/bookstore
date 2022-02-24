@@ -1,10 +1,8 @@
 .navbar {
   display: flex;
- 
 }
 
 .nav-card {
-
   box-shadow: 0 0 5px #e8e8e8;
   display: flex;
   justify-content: center;
@@ -14,9 +12,9 @@
 .nav-content {
   display: flex;
   position: relative;
- 
   align-items: center;
 }
+
 .icon-div {
   position: absolute;
   right: 0;
@@ -51,11 +49,8 @@
   text-decoration: none;
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   .nav-content {
     width: 85vw;
   }
-
-  
-  
 }

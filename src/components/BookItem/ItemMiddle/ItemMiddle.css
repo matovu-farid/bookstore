@@ -1,13 +1,12 @@
 .item-middle {
   display: flex;
   align-items: center;
-
- 
 }
 
 .progress-bar {
   width: 4.25rem;
   height: 4.25rem;
+  margin-right: 15px;
 }
 
 .pecent-text {
