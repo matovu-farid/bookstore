@@ -24,6 +24,11 @@
   border: none
 }
 
-option[hidden] {
-  background-color: red;
+
+
+@media only screen and (min-width: 1200px){
+  .book-form {
+    width: 85vw;
+  }
+  
 }

@@ -1,0 +1,11 @@
+
+.book-list li {
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 1200px){
+  .book-list {
+    width: 85vw;
+  }
+  
+}

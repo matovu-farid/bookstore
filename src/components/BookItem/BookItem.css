@@ -3,10 +3,14 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0 0 5px #968f8f;
-  padding: 20px;
+  padding: 1.2rem 1.68rem ;
+  
+  
   align-items: center;
   font-size: 0.875rem;
+
 }
+
 
 
 

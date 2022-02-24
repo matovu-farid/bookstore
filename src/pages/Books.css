@@ -1,11 +1,10 @@
-.book-list {
-  border: 2px solid black;
-}
+
 
 .book-page {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
+  align-items: center;
 }
 
 
