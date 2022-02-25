@@ -24,7 +24,7 @@ To get the content of this project locally you need to run this command in your 
 - npm start
 ### Deployment
 This project is deployed on a github page on the link below:
-- https://matovu-farid.github.io/bookstore/
+- [Click here](https://friendly-allen-b461f6.netlify.app/)
 
 ## Author
 
